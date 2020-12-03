@@ -79,7 +79,7 @@ headModel = AveragePooling2D(pool_size=(7, 7))(headModel)
 headModel = Flatten(name="flatten")(headModel)
 headModel = Dense(128, activation="relu")(headModel)
 headModel = Dropout(0.5)(headModel)
-headModel = Dense(2, activation="softmax")(headModel)
+headModel = Dense(2, activation="sigmoid")(headModel)
 
 # place the head FC model on top of the base model (this will become
 # the actual model we will train)
