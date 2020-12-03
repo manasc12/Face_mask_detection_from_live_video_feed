@@ -65,8 +65,7 @@ aug = ImageDataGenerator(
 	width_shift_range=0.2,
 	height_shift_range=0.2,
 	shear_range=0.15,
-	horizontal_flip=True,
-	fill_mode="nearest")
+	horizontal_flip=True)
 
 # load the MobileNetV2 network, ensuring the head FC layer sets are
 # left off
